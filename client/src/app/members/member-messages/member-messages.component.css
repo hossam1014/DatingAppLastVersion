@@ -1,0 +1,29 @@
+.chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat::-webkit-scrollbar {
+    width: 5px; 
+}
+  
+.chat::-webkit-scrollbar-track {
+    background: transparent;    
+  }
+  
+.chat::-webkit-scrollbar-thumb {
+    background-color: #e96f43;
+    border-radius: 20px;  
+    opacity: 0.48;     
+  }
+
+.rounded-circle {
+    max-height: 50px;
+}
