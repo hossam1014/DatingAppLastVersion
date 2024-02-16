@@ -1,0 +1,28 @@
+# fly.toml app configuration file generated for hossam-datingapp on 2024-02-16T14:59:44+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'hossam-datingapp'
+primary_region = 'cdg'
+
+[build]
+  image = 'hossam12/datingapp:latest'
+
+[env]
+  ASPNETCORE_URLS="http://+:8080"
+  CloudinarySettings__CloudName="da8a85pzl"
+  CloudinarySettings__ApiKey="666874372537636"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
