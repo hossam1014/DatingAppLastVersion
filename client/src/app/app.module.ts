@@ -1,18 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-<<<<<<< HEAD
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
-=======
-import {HttpClientModule} from '@angular/common/http';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
->>>>>>> 6c66e5375e17abee69b185f1150b0eed31a06ec2
 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
-<<<<<<< HEAD
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
@@ -40,18 +34,12 @@ import { UserManagementComponent } from './admin/user-management/user-management
 import { PhotoManagementComponent } from './admin/photo-management/photo-management.component';
 import { RolesModalComponent } from './modals/roles-modal/roles-modal.component';
 import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.component';
-=======
-import { FormsModule } from '@angular/forms';
-import { HomeComponent } from './home/home.component';
-import { RegisterComponent } from './register/register.component';
->>>>>>> 6c66e5375e17abee69b185f1150b0eed31a06ec2
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
-<<<<<<< HEAD
     RegisterComponent,
     MemberListComponent,
     MemberDetailComponent,
@@ -72,9 +60,6 @@ import { RegisterComponent } from './register/register.component';
     PhotoManagementComponent,
     RolesModalComponent,
     ConfirmDialogComponent
-=======
-    RegisterComponent
->>>>>>> 6c66e5375e17abee69b185f1150b0eed31a06ec2
   ],
   imports: [
     BrowserModule,
@@ -82,7 +67,6 @@ import { RegisterComponent } from './register/register.component';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-<<<<<<< HEAD
     ReactiveFormsModule,
     SharedModule,
     NgxSpinnerModule
@@ -91,10 +75,6 @@ import { RegisterComponent } from './register/register.component';
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
     {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true}
-=======
-    BsDropdownModule.forRoot()
-
->>>>>>> 6c66e5375e17abee69b185f1150b0eed31a06ec2
   ],
   bootstrap: [AppComponent]
 })

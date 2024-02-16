@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 .dropdown-toggle{
-=======
-a.dropdown-toggle:hover {
->>>>>>> 6c66e5375e17abee69b185f1150b0eed31a06ec2
   text-decoration: none;
 }
 .dropdown-item,
 .dropdown-toggle {
   cursor: pointer;
-<<<<<<< HEAD
 }
 
 img {
@@ -16,6 +11,4 @@ img {
   border: 2px solid #fff;
   border-radius: 50%;
   display: inline;
-=======
->>>>>>> 6c66e5375e17abee69b185f1150b0eed31a06ec2
 }
